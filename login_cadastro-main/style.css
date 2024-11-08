@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #172031;
+}
+
+.login {
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+
+.login h2 {
+    margin-bottom: 30px;
+    font-size: 30pxs;
+    color: #000;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+    pointer-events: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    border-bottom:1px solid #000;
+    color: #000;
+    font-size: 16px;
+}
+
+.login input:focus~label{
+    top: -20px;
+    left: 0%;
+    color:#03e9f4 ;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7e7e8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #03e9f4;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.fa-eye{
+    position: fixed;
+   transform: translate(-30px,10px);
+    color: rgb(20, 20, 20);
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

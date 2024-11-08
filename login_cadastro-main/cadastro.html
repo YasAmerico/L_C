@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- feito por Kauan Marques -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form class="login">
+        <h2>Cadastro</h2>
+
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+
+        <div class="label-float">
+            <input type="text" id="nome" class="input" placeholder="Nome">
+            <label id="labelNome" for="nome">Nome</label>
+        </div> 
+           <br><br>
+        <div class="label-float">
+            <input type="text" id="Usuário" class="input" placeholder="Usuário">
+            <label id="labelUsuario" for="usuario">Usuário</label>
+        </div>
+            <br><br>
+        <div id="label-float" >
+            <input type="password" id="senha" class="input" placeholder="Senha">
+            <label id="labelSenha" for="senha">Senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+            <br><br>
+        <div id="label-float">
+            <input type="password" id="confirmsenha" class="input" placeholder="Confirmar Senha">
+            <label id="labelConfirmSenha" for="confirmSenha"
+            <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+        <a href="/ASSETS/politicaSenhas.pdf" download>Veja nossa política de senhas fortes></a>
+            <br><br>
+            <button>Cadastrar</button>
+            <br><br>
+            <button>Já tenho conta</button>
+    </form>
+<script src="./SCRIPTS/cadastro.js"></script>
+</body>
+</html>
