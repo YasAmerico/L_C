@@ -52,7 +52,6 @@ input[type="password"] {
 .login input:focus~label{
     top: -20px;
     left: 0%;
-    color:#03e9f4 ;
     font-size: 12px;
 }
 
@@ -71,14 +70,10 @@ button:hover {
     background-color: #03e9f4;
 }
 
-#error-message {
-    color: red;
-    margin-top: 10px;
-}
-
 .fa-eye{
     position: fixed;
-   transform: translate(-30px,10px);
+   transform: translate(-30px,20px);
+   cursor: pointer;
     color: rgb(20, 20, 20);
 }
 
