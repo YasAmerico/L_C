@@ -32,7 +32,7 @@ nome.addEventListener('keyup',( ) =>{
         labelNome.setAttribute('style','color:green')
         labelNome.innerHTML = 'Nome'
         nome.setAttribute('style','border-color:green')
-        validNome=true
+        validNome = true
     }
 })
 
@@ -101,7 +101,40 @@ function cadastrar(){
                 senhaCad:senhaCriptografada
             }
         )
+        localStorage.setItem('listaUser',JSON.stringify(listaUser))
 
-    }
-    localStorage.setItem('listaUser',JSON.stringify(listaUser))
+        msgSuccess.setAttribute('style','display:block')
+        msgSuccess.innerHTML = '<strong>Cadastrando usuario...</strong>'
+        msgError.setAttribute('style','display:none')
+        msgError.innerHTML =''
+
+        setTimeout(()=>{
+            window.Location.href='../login.html'
+        },3000)
+
+    }else{
+        msgError.setAttribute('style','display:block')
+        msgError.innerHTML ='<strong>Preencha todos os campos</strong>'
+        msgSuccess.setAttribute('style','display:none')
+        msgSuccess.innerHTML = ''
+    }     
 }
+    btn.addEventListener('click',()=>{
+        let inputSenha = document.querySelector('#senha')
+
+        if(inputSenha.getAttribute('type') == 'password'){
+            inputSenha.setAttribute('type','text')
+        }else{
+            inputSenha.setAttribute('type','password')
+        }
+    })
+
+    btnConfirm.addEventListener('click',()=>{
+        let inputConfirmSenha = document.querySelector('#confirmSenha')
+
+        if(inputConfirmSenha.getAttribute('type') == 'password'){
+            inputConfirmSenha.setAttribute('type','text')
+        }else{
+            inputConfirmSenha.setAttribute('type','password')
+        }
+    })
