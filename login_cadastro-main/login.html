@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> 
 </head>
 <body>
     <form class="login">
         <h2>Login</h2>
+
+        <div id="msgError"></div>
+
             <div id="label-float">
-                <input type="text" id="nome" class="input" placeholder="Nome">
+                <input type="text" id="usuario" class="input" placeholder="usuario">
                 <label id="userLabel" for="usuario">Usuario</label>
            </div>
             <br><br>
@@ -21,7 +25,7 @@
             </div>
             <br><br>
             <div class="justify-center">
-                <button onclick="entrar()">Entrar</button>
+                <button onClick="entrar()">Entrar</button>
             </div>
 
             <div class="justify-center">
@@ -30,11 +34,11 @@
 
             <p>
                 Não tem conta?
-                <a href="../Cadastro.html">
+                <a href="cadastro.html">
                     Cadastre-se
                 </a>
             </p>
     </form>
-    <script src="../SCRIPTS/login.js"></script>
+    <script src="SCRIPTS/login.js"></script>
 </body>
 </html>
